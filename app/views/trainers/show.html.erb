@@ -13,3 +13,7 @@
 			</p>
 			<% end %>
 </p>		
+
+<% if @trainer.id == current_trainer.id %> 
+	<%= button_to "Create Pokemon", pokemons_new_path, :method => "get" %>
+<% end %>

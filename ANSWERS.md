@@ -22,6 +22,9 @@ Path needed id of current trainer in order to redirect to their profile page.
 
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
 
+Any errors generated while creating new pokemon are stored in @pokemon.errors.full_messages.to_sentence.  Anything put into flash is rendered on the next action, so when we display our form again after the error, our error message shows.  Using the :error key lets us use built in components for displaying errors.
+
 # Give us feedback on the project and decal below!
+Really like having the answers section since it forces us to think and not just write code/copy paste code without knowing what it is doing!  Also like how th project was broken down into sections.
 
 # Extra credit: Link your Heroku deployed app
